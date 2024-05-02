@@ -19,24 +19,24 @@ const Header = () => {
         <img className="logo w-20 rounded-full mt-1 ml-3" src={LOGO_URL} />
       </div>
       <div className="nav-container">
-        <ul className="flex p-4 m-4">
-          <li className="mr-10">
+        <ul className="flex p-4 m-4 ">
+          <li className="mr-12 hover:text-white">
             <Link to={"/"}>Home</Link>
           </li>
-          <li className="mr-9">
+          <li className="mr-12 hover:text-white">
             <Link to={"/about"}>About Us</Link>
           </li>
-          <li className="mr-9">
+          {/* <li className="mr-9">
             <Link to={"/grocery"}>Grocery</Link>
-          </li>
-          <li className="mr-10 flex items-center justify-center">
+          </li> */}
+          <li className="mr-12 flex items-center justify-center hover:text-white">
             <PiShoppingCart />
             <Link className="ml-1" to={"/cart"}>
               Cart({cartItems.length})
             </Link>
           </li>
           <button
-            className="login-btn"
+            className="login-btn  w-[4rem] hover:text-white"
             onClick={() => {
               btnNameReact === "Login"
                 ? setBtnNameReact("Logout")

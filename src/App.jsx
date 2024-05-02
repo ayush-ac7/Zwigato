@@ -11,7 +11,7 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
 
-const Grocery = lazy(() => import("./components/Grocery"));
+//const Grocery = lazy(() => import("./components/Grocery"));
 
 
 const App = () => {
@@ -39,14 +39,14 @@ export const appRouter = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      {
-        path: "/grocery",
-        element: (
-          <Suspense fallback={<div>Loading...</div>}>
-            <Grocery />
-          </Suspense>
-        ),
-      },
+      // {
+      //   path: "/grocery",
+      //   element: (
+      //     <Suspense fallback={<div>Loading...</div>}>
+      //       <Grocery />
+      //     </Suspense>
+      //   ),
+      // },
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
