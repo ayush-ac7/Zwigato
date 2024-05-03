@@ -1,16 +1,14 @@
 const Shimmer = () => {
   return (
-    <div className="shimmer-container flex flex-wrap mt-12 p-12">
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
-      <div className="h-[420px] w-[230px] bg-gray-100 m-10"></div>
+  <div className="flex flex-nowrap gap-4">
+    <div className="content box-border border-3 w-64 p-4 rounded-md shadow-md bg-slate-100 hover: shadow-lg transition duration-300 ease-in-out -translate-y-1 ">
+      <div className="skeleton-image bg-gray-300 h-40 mb-4"></div>
+      <div className="skeleton-text bg-gray-300 h-4 w-1/2 mb-2"></div>
+      <div className="skeleton-text bg-gray-300 h-4 w-[60px] mb-2"></div>
+      <div className="skeleton-text bg-gray-300 h-6 w-6/6"></div>
+      <div></div>
     </div>
+  </div>
   );
 };
 
