@@ -13,14 +13,13 @@ import Cart from "./components/Cart";
 
 //const Grocery = lazy(() => import("./components/Grocery"));
 
-
 const App = () => {
   return (
     <Provider store={appStore}>
       <div>
         <Header />
         <Outlet />
-        <Footer /> 
+        <Footer />
       </div>
     </Provider>
   );
@@ -56,6 +55,9 @@ export const appRouter = createBrowserRouter([
         element: <Cart />,
       },
     ],
+  },
+
+  {
     errorElement: <Error />,
   },
 ]);
