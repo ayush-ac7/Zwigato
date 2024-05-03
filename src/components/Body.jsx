@@ -20,7 +20,15 @@ const Body = () => {
 
   //conditional rendering
   if (listOfRestaurants.length === 0) {
-    return <Shimmer />;
+    let shimmer = [];
+    for (let i = 0; i < 20; i++) {
+      shimmer.push(<Shimmer key={i} />);
+    }
+    return (
+      <div className="py-28 mx-10">
+        <div className="flex flex-wrap gap-8 justify-start">{shimmer}</div>
+      </div>
+    );
   }
 
   return (
