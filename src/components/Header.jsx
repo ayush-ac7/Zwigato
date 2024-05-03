@@ -16,10 +16,10 @@ const Header = () => {
   return (
     <div className="w-full flex justify-between shadow-lg bg-orange-400">
       <div className="logo-container">
-        <img className="logo w-20 rounded-full mt-1 ml-3" src={LOGO_URL} />
+        <img className="logo w-20 rounded-full mt-1 ml-3 shadow-md shadow-slate-100  animate-bounce" src={LOGO_URL} />
       </div>
       <div className="nav-container">
-        <ul className="flex p-4 m-4 ">
+        <ul className="flex p-4 m-4 font-semibold text-lg">
           <li className="mr-12 hover:text-white">
             <Link to={"/"}>Home</Link>
           </li>
