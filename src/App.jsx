@@ -56,7 +56,6 @@ export const appRouter = createBrowserRouter([
       },
     ],
   },
-
   {
     errorElement: <Error />,
   },

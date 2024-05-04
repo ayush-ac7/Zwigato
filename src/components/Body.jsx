@@ -19,7 +19,7 @@ const Body = () => {
   }
 
   //conditional rendering
-  if (listOfRestaurants.length === 0) {
+  if(listOfRestaurants.length === 0) {
     let shimmer = [];
     for (let i = 0; i < 20; i++) {
       shimmer.push(<Shimmer key={i} />);

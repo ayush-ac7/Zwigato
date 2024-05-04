@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import ItemList from "./ItemList";
 import { clearCart } from "../utils/cartSlice";
-import cartIMG from "../assets/cartIMG.png";
+import cart_IMG from "../assets/cartIMG.png";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
@@ -16,7 +16,7 @@ const Cart = () => {
   if (cartItems.length === 0) {
     return (
       <div className="text-center max-w-lg mx-auto">
-        <img src={cartIMG} className="mx-auto p-2 rounded-full" />
+        <img src={cart_IMG} className="mx-auto p-2 rounded-full" />
         <h2 className=" font-mono font-bold text-xl pt-5" >Cart is empty, Please add your items.</h2>
         <p className="text-md py-5 font-light">You can go to home page to view more restaurants</p>
       </div>

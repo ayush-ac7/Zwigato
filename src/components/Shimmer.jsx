@@ -6,7 +6,6 @@ const Shimmer = () => {
       <div className="skeleton-text bg-gray-300 h-4 w-1/2 mb-2"></div>
       <div className="skeleton-text bg-gray-300 h-4 w-[60px] mb-2"></div>
       <div className="skeleton-text bg-gray-300 h-6 w-6/6"></div>
-      <div></div>
     </div>
   </div>
   );
