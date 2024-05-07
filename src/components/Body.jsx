@@ -35,12 +35,12 @@ const Body = () => {
   return (
     <div className="">
       <div className="max-w-7xl mx-auto ">
-        <div className="filter flex items-center">
+        <div className="filter md:flex items-center">
           <div className="search m-4 p-4">
             <input
               type="text"
               placeholder="Search your favourite Restaurant...."
-              className="search-box border border-solid border-black w-96 h-9"
+              className="search-box w-40  md: border border-solid border-black md:w-96 h-9"
               value={searchText}
               onChange={(e) => {
                 setSearchText(e.target.value);
@@ -64,7 +64,7 @@ const Body = () => {
 
           <div>
             <button
-              className="filter-btn m-2 p-2 bg-gray-300 rounded-lg"
+              className="filter-btn  m-2 p-2 bg-gray-300 rounded-lg"
               onClick={() => {
                 const filteredList = listOfRestaurants.filter(
                   (res) => res.info.avgRating > 4

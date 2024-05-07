@@ -38,30 +38,26 @@ const ItemList = ({ items }) => {
             <p className="text-xs">{item?.card?.info?.description}</p>
           </div>
 
-
           <div className="w-2/12 sm: m-2">
             <div className="relative">
-            <img className="w-32" src={IMG_URL + item?.card?.info?.imageId} />
-            <div className="">
-              <button
-                onClick={() => handleAddItem(item)}
-                className="p-1  bg-black text-white text-md absolute bottom-0 hover:opacity-70"
-              >
-                <FaPlus />
-              </button>
-              <button
-                onClick={() => handleRemoveItem(item)}
-                className=" p-1  ml-14 bg-black text-white text-md absolute left-5 bottom-0 hover:opacity-70"
-              >
-                {" "}
-                <FaMinus />
-              </button>
+              <img className="w-32" src={IMG_URL + item?.card?.info?.imageId} />
+              <div className="">
+                <button
+                  onClick={() => handleAddItem(item)}
+                  className="p-1  bg-black text-white text-md absolute bottom-0 hover:opacity-70"
+                >
+                  <FaPlus />
+                </button>
+                <button
+                  onClick={() => handleRemoveItem(item)}
+                  className=" p-1  ml-14 bg-black text-white text-md absolute left-5 bottom-0 hover:opacity-70"
+                >
+                  {" "}
+                  <FaMinus />
+                </button>
+              </div>
             </div>
-            </div>
-            
           </div>
-
-
         </div>
       ))}
     </div>
