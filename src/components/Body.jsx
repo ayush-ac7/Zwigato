@@ -33,7 +33,7 @@ const Body = () => {
   }
 
   return (
-    <div className="lg:w-full">
+    <div className="w-full">
       <div className="max-w-7xl mx-auto">
         <div className="filter flex items-center ">
           <div className="search m-4 p-4 ">
