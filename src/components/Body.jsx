@@ -35,12 +35,12 @@ const Body = () => {
   return (
     <div className="">
       <div className="max-w-7xl mx-auto ">
-        <div className="filter flex items-center sm:  flex-col">
-          <div className="search m-4 p-4 sm: flex-col text-center">
+        <div className="filter flex items-center">
+          <div className="search m-4 p-4">
             <input
               type="text"
               placeholder="Search your favourite Restaurant...."
-              className="search-box border border-solid border-black w-96 h-9 sm: w-44"
+              className="search-box border border-solid border-black w-96 h-9"
               value={searchText}
               onChange={(e) => {
                 setSearchText(e.target.value);
@@ -76,7 +76,7 @@ const Body = () => {
             </button>
           </div>
         </div>
-        <div className="res-container flex flex-wrap sm: flex-col justify-center items-center  ">
+        <div className="res-container flex flex-wrap">
           {filteredRestaurants.map((restaurant) => (
             <Link
               className="res-cards"
