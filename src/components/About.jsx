@@ -8,7 +8,7 @@ const About = () => {
 //     element.scrollIntoView();
   
   return (
-    <section className=" my-12 bg-gradient-to-r from-[#D4145A] to-[#FBB03B] flex justify-center items-center">
+    <section className=" my-12 bg-gradient-to-r from-[#D4145A] to-[#FBB03B] flex justify-center items-center sm: w-full object-cover">
         
         <div className="px-4 mx-auto lg:px-8 xl:px-12 sm:w-4/5">
           <div className="py-8 mx-auto flex flex-col justify-start items-start lg:flex-row lg:justify-between lg:items-center">

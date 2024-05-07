@@ -14,12 +14,12 @@ const Header = () => {
   //console.log(cartItems);
 
   return (
-    <div className="w-full flex justify-between items-center shadow-lg bg-orange-400 h-20">
+    <div className="lg:w-full flex justify-between items-center shadow-lg bg-orange-400 h-20">
       <div className="logo-container">
         <img className="logo w-20 rounded-full mt-1 ml-3 shadow-md shadow-slate-100  animate-bounce" src={LOGO_URL} />
       </div>
       <div className="nav-container">
-        <ul className="flex p-4 m-4 font-semibold text-lg">
+        <ul className="flex p-4 m-4 font-semibold text-lg sm: text-sm gap--6">
           <li className="mr-12 hover:text-white">
             <Link to={"/"}>Home</Link>
           </li>
@@ -36,7 +36,7 @@ const Header = () => {
             </Link>
           </li>
           <button
-            className="login-btn  w-[4rem] hover:text-white"
+            className="login-btn  w-[4rem] hover:text-white sm: w-[0.75rem]"
             onClick={() => {
               btnNameReact === "Login"
                 ? setBtnNameReact("Logout")
