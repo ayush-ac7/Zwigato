@@ -51,7 +51,7 @@ const ItemList = ({ items }) => {
               </button>
               <button
                 onClick={() => handleRemoveItem(item)}
-                className=" p-1  ml-14 bg-black text-white text-md absolute left-6 bottom-0 hover:opacity-70"
+                className=" p-1  ml-14 bg-black text-white text-md absolute left-5 bottom-0 hover:opacity-70"
               >
                 {" "}
                 <FaMinus />
