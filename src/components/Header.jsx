@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LOGO_URL } from "../utils/constants";
+import logo from "../assets/zwigato-logo.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { PiShoppingCart } from "react-icons/pi";
@@ -16,7 +16,12 @@ const Header = () => {
   return (
     <div className="lg:w-full flex justify-between items-center shadow-lg bg-orange-400 h-20">
       <div className="logo-container">
-        <img className="logo w-20 rounded-full mt-1 ml-3 shadow-md shadow-slate-100  animate-bounce" src={LOGO_URL} />
+        <Link className="flex items-center" to={"/"}>
+          <img src={logo} alt="zwigato-logo" className="w-12 ml-2 rounded-full" />
+          <h2 className="text-4xl italic font-bold cursor-pointer text-white ml-2">
+            Zwigato
+          </h2>
+        </Link>
       </div>
       <div className="nav-container">
         <ul className="flex p-4 m-4 font-semibold text-lg sm: text-sm gap--6">
