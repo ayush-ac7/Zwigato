@@ -33,9 +33,9 @@ const Body = () => {
   }
 
   return (
-    <div>
-      <div className="body w-full  px-12">
-        <div className="filter flex items-center">
+    <div className="lg:w-full">
+      <div className="max-w-7xl mx-auto">
+        <div className="filter flex items-center ">
           <div className="search m-4 p-4 ">
             <input
               type="text"
@@ -76,7 +76,7 @@ const Body = () => {
             </button>
           </div>
         </div>
-        <div className="res-container flex flex-wrap ">
+        <div className="res-container flex flex-wrap  ">
           {filteredRestaurants.map((restaurant) => (
             <Link
               className="res-cards"
