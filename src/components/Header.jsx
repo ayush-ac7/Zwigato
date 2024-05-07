@@ -36,7 +36,7 @@ const Header = () => {
             </Link>
           </li>
           <button
-            className="login-btn  w-[4rem] hover:text-white sm: w-[0.75rem]"
+            className="login-btn  w-[4rem] hover:text-white sm: w-[0.25rem] hidden"
             onClick={() => {
               btnNameReact === "Login"
                 ? setBtnNameReact("Logout")

@@ -25,7 +25,7 @@ const ItemList = ({ items }) => {
           key={index}
           className="p-2 m-2  border-gray-200 border-b-2 text-left flex justify-between"
         >
-          <div className="w-9/12">
+          <div className="w-9/12 sm: w-3/2">
             <div className="py-2">
               <span>{item?.card?.info?.name}</span>
               <span>
@@ -39,9 +39,9 @@ const ItemList = ({ items }) => {
           </div>
 
 
-          <div className="w-2/12">
+          <div className="w-2/12 sm: m-2 w-2/5">
             <div className="relative">
-            <img className="w-32 " src={IMG_URL + item?.card?.info?.imageId} />
+            <img className="w-32 sm: w-20 " src={IMG_URL + item?.card?.info?.imageId} />
             <div className="">
               <button
                 onClick={() => handleAddItem(item)}
@@ -51,7 +51,7 @@ const ItemList = ({ items }) => {
               </button>
               <button
                 onClick={() => handleRemoveItem(item)}
-                className=" p-1  ml-14 bg-black text-white text-md absolute left-6 bottom-0 hover:opacity-70"
+                className=" p-1  ml-14 bg-black text-white text-md absolute left-6 bottom-0 hover:opacity-70 sm: right-0  left-0"
               >
                 {" "}
                 <FaMinus />
