@@ -3,7 +3,7 @@ import logo from "../assets/zwigato-logo.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { PiShoppingCart } from "react-icons/pi";
-import { FaHamburger } from "react-icons/fa";
+import { LuMenuSquare } from "react-icons/lu";
 import { GiSkullCrossedBones } from "react-icons/gi";
 
 const Header = () => {
@@ -24,25 +24,25 @@ const Header = () => {
           <img
             src={logo}
             alt="zwigato-logo"
-            className="w-12 ml-2 rounded-full"
+            className="w-8 md:w-12 md:ml-2 rounded-full"
           />
-          <h2 className="text-4xl italic font-bold cursor-pointer text-white ml-2">
+          <h2 className="text-2xl md:text-4xl italic font-bold cursor-pointer text-white ml-2">
             Zwigato
           </h2>
         </Link>
       </div>
       <div className="nav-container">
-        <ul className="hidden md:flex p-4 m-4 font-semibold text-lg">
-          <li className="mr-12 hover:text-white">
+        <ul className="hidden md:flex p-4 m-4 font-semibold text-lg ">
+          <li className="mr-12 hover:text-white hover:border-b-2">
             <Link to={"/"}>Home</Link>
           </li>
-          <li className="mr-12 hover:text-white">
+          <li className="mr-12 hover:text-white hover:border-b-2">
             <Link to={"/about"}>About Us</Link>
           </li>
           {/* <li className="mr-9">
             <Link to={"/grocery"}>Grocery</Link>
           </li> */}
-          <li className="mr-12 flex items-center justify-center hover:text-white">
+          <li className="mr-12 flex items-center justify-center hover:text-white hover:border-b-2">
             <PiShoppingCart />
             <Link className="ml-1" to={"/cart"}>
               Cart({cartItems.length})
@@ -59,8 +59,8 @@ const Header = () => {
             {btnNameReact}
           </button>
         </ul>
-        <button className="md:hidden" onClick={handleMenu()}>
-          <FaHamburger />
+        <button className="md:hidden p-2 m-2" onClick={handleMenu()}>
+          <LuMenuSquare />
         </button>
       </div>
     </nav>
